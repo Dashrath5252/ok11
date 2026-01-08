@@ -1,8 +1,21 @@
 {
+  "name": "ok11",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "export": "next build && next export"
+  },
   "dependencies": {
     "next": "14.1.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "sharp": "0.33.2" 
+    "sharp": "0.33.2" // ✅ MUST for image optimization
+  },
+  "devDependencies": {
+    "eslint": "8.57.0",
+    "eslint-config-next": "14.1.0"
   }
 }
