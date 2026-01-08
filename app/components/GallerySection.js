@@ -8,18 +8,14 @@ export default function GallerySection() {
     const imageCards = document.querySelectorAll('.clean-image-card')
     
     imageCards.forEach(card => {
-      const img = card.querySelector('.clean-image')
-      
       card.addEventListener('mouseenter', () => {
         card.style.transform = 'translateY(-10px)'
         card.style.boxShadow = '0 20px 40px rgba(255, 158, 0, 0.3)'
-        if (img) img.style.transform = 'scale(1.05)'
       })
       
       card.addEventListener('mouseleave', () => {
         card.style.transform = 'translateY(0)'
         card.style.boxShadow = 'none'
-        if (img) img.style.transform = 'scale(1)'
       })
     })
 
@@ -39,11 +35,13 @@ export default function GallerySection() {
         <div className="clean-image-card">
           <Image
             src="/ok111.webp"
-            alt="OK11 Game Screenshot 1"
-            fill
-            className="clean-image"
-            sizes="(max-width: 768px) 50vw, 25vw"
+            alt="OK11 Game Screenshot 1 - Slots Game"
+            width={300}
+            height={533}
+            sizes="(max-width: 768px) 50vw, 300px"
             loading="lazy"
+            quality={85}
+            style={{ width: '100%', height: 'auto' }}
           />
           <div className="image-badge badge-hot">HOT</div>
         </div>
@@ -51,11 +49,13 @@ export default function GallerySection() {
         <div className="clean-image-card">
           <Image
             src="/ok112.webp"
-            alt="OK11 Game Screenshot 2"
-            fill
-            className="clean-image"
-            sizes="(max-width: 768px) 50vw, 25vw"
+            alt="OK11 Game Screenshot 2 - Poker Game"
+            width={300}
+            height={533}
+            sizes="(max-width: 768px) 50vw, 300px"
             loading="lazy"
+            quality={85}
+            style={{ width: '100%', height: 'auto' }}
           />
           <div className="image-badge badge-new">NEW</div>
         </div>
@@ -63,11 +63,13 @@ export default function GallerySection() {
         <div className="clean-image-card">
           <Image
             src="/ok113.webp"
-            alt="OK11 Game Screenshot 3"
-            fill
-            className="clean-image"
-            sizes="(max-width: 768px) 50vw, 25vw"
+            alt="OK11 Game Screenshot 3 - Fishing Game"
+            width={300}
+            height={533}
+            sizes="(max-width: 768px) 50vw, 300px"
             loading="lazy"
+            quality={85}
+            style={{ width: '100%', height: 'auto' }}
           />
           <div className="image-badge badge-popular">POPULAR</div>
         </div>
@@ -75,11 +77,13 @@ export default function GallerySection() {
         <div className="clean-image-card">
           <Image
             src="/ok114.webp"
-            alt="OK11 Game Screenshot 4"
-            fill
-            className="clean-image"
-            sizes="(max-width: 768px) 50vw, 25vw"
+            alt="OK11 Game Screenshot 4 - Roulette Game"
+            width={300}
+            height={533}
+            sizes="(max-width: 768px) 50vw, 300px"
             loading="lazy"
+            quality={85}
+            style={{ width: '100%', height: 'auto' }}
           />
           <div className="image-badge badge-trending">TRENDING</div>
         </div>
