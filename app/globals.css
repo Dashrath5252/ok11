@@ -19,9 +19,9 @@ body {
   padding: 0 20px;
 }
 
-/* Header - NO FLOATING */
+/* Header */
 .main-header {
-  background: linear-gradient(135deg,  #1a1a1a 0%, #4a4a4a 100%);
+  background: linear-gradient(135deg, #1a1a1a 0%, #4a4a4a 100%);
   backdrop-filter: blur(10px);
   border-bottom: 2px solid #ff9e00;
   position: sticky;
@@ -102,7 +102,7 @@ body {
   margin-right: auto;
 }
 
-/* Hero App Icon - WITH FLOATING */
+/* Hero App Icon */
 .floating-app-icon {
   width: 120px;
   height: 120px;
@@ -125,7 +125,6 @@ body {
   animation: float 3s ease-in-out infinite;
 }
 
-/* Floating Animation - For Hero Icon Only */
 @keyframes float {
   0%, 100% { transform: translateY(0px); }
   50% { transform: translateY(-15px); }
@@ -206,14 +205,13 @@ body {
   font-weight: 700;
 }
 
-/* Image Grid - 2x2 Layout */
+/* Image Grid */
 .image-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 25px;
 }
 
-/* Clean Image Card with 9:16 Aspect Ratio */
 .clean-image-card {
   position: relative;
   border-radius: 15px;
@@ -243,7 +241,7 @@ body {
   transform: scale(1.05);
 }
 
-/* Improved Badges */
+/* Badges */
 .image-badge {
   position: absolute;
   top: 15px;
