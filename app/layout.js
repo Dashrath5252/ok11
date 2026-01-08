@@ -18,21 +18,21 @@ export const metadata = {
     title: 'ok11 Game APK - official website ok11 game| Free Android,Ios and Pc Game',
     description: 'Free download ok11 Game APK for Android. Get ₹500 welcome bonus! Play 100+ games including slots, poker, fishing, and rourette. Safe & secure entertainment gaming.',
     images: [
-      {
-        url: `${SITE_URL}/ok11icon.webp`,
-        width: 180,
-        height: 180,
-        alt: 'ok11 Game APK Download Icon - Get ₹500 Bonus',
-      },
-    ],
+  {
+    url: '/ok11icon.webp', 
+    width: 180,
+    height: 180,
+    alt: 'ok11 Game APK Download Icon',
   },
+],
   twitter: {
     card: 'summary_large_image',
     site: '@ok11game',
     creator: '@ok11game',
     title: 'OK11 Game APK Download - Free ₹500 Bonus',
     description: 'Download ok11 Game APK for free! Get ₹500 welcome bonus. Play slots, poker, fishing & roulette games. 100% safe Android entertainment.',
-    images: [`${SITE_URL}/ok11icon.webp`],
+    images: ['/ok11icon.webp'],
+,
   },
 }
 
