@@ -2,7 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    unoptimized: true, // ✅ true करो (false से)
+    unoptimized: true, // Disable optimization for now
   },
 }
 
