@@ -3,7 +3,6 @@ import { Inter } from 'next/font/google'
 
 const inter = Inter({ subsets: ['latin'] })
 
-// ✅ FIXED: Hardcoded URL for ok11.vercel.app
 const SITE_URL = 'https://ok11.vercel.app'
 
 export const metadata = {
@@ -16,15 +15,16 @@ export const metadata = {
     type: 'website',
     url: SITE_URL,
     title: 'ok11 Game APK - official website ok11 game| Free Android,Ios and Pc Game',
-    description: 'Free download ok11 Game APK for Android. Get ₹500 welcome bonus! Play 100+ games including slots, poker, fishing, and rourette. Safe & secure entertainment gaming.',
+    description: 'Free download ok11 Game APK for Android. Get ₹500 welcome bonus! Play 100+ games including slots, poker, fishing, and roulette. Safe & secure entertainment gaming.',
     images: [
-  {
-    url: '/ok11icon.webp', 
-    width: 180,
-    height: 180,
-    alt: 'ok11 Game APK Download Icon',
+      {
+        url: '/ok11icon.webp',
+        width: 180,
+        height: 180,
+        alt: 'ok11 Game APK Download Icon - Get ₹500 Bonus',
+      },
+    ],
   },
-],
   twitter: {
     card: 'summary_large_image',
     site: '@ok11game',
@@ -32,7 +32,6 @@ export const metadata = {
     title: 'OK11 Game APK Download - Free ₹500 Bonus',
     description: 'Download ok11 Game APK for free! Get ₹500 welcome bonus. Play slots, poker, fishing & roulette games. 100% safe Android entertainment.',
     images: ['/ok11icon.webp'],
-,
   },
 }
 
