@@ -1,8 +1,10 @@
+// next.config.js
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  reactStrictMode: true,
   images: {
-    formats: ["image/avif", "image/webp"],
+    domains: ['ok11.vercel.app'],
   },
-};
+}
 
-export default nextConfig;
+module.exports = nextConfig
