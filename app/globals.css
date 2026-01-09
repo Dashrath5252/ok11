@@ -12,6 +12,53 @@ img {
   display: block;
 }
 
+/* =========================
+   GALLERY HOVER EFFECTS
+========================= */
+
+.clean-image-card {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.clean-image-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(255, 158, 0, 0.3);
+}
+
+/* Image zoom effect */
+.clean-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.clean-image-card:hover .clean-image {
+  transform: scale(1.05);
+}
+
+/* Badge animation */
+.image-badge {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  animation: badgePop 0.6s ease;
+}
+
+@keyframes badgePop {
+  0% {
+    transform: scale(0.7);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+
 /* ================= BASE ================= */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
